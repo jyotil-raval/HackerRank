@@ -17,7 +17,7 @@ function timeConversion(time) {
 		}
 		time = timeArr.join(':');
 	}
-	console.log('timeConversion -> time', time);
+	// console.log('timeConversion -> time', time);
 	return time;
 }
 
