@@ -1,6 +1,8 @@
+// 30_Days_Code > Day_05_Loop
+
 const prepare_table = (number) => {
-	for (let i = 1; i <= 10; i++) {
-		console.log(`${number} x ${i} = ${number * i}`);
+	for (let idx = 1; idx <= 10; idx++) {
+		console.log(`${number} x ${idx} = ${number * idx}`);
 	}
 };
 
