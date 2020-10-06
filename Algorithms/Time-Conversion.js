@@ -2,23 +2,24 @@
  * Complete the timeConversion function below.
  */
 function timeConversion(time) {
-	if (time.includes('PM')) {
-		time = time.split('PM')[0];
-		let timeArr = time.split(':');
-		if (timeArr[0] != 12) {
-			timeArr[0] = parseInt(timeArr[0]) + 12;
-		}
-		time = timeArr.join(':');
-	} else if (time.includes('AM')) {
-		time = time.split('AM')[0];
-		let timeArr = time.split(':');
-		if (timeArr[0] == 12) {
-			timeArr[0] = '00';
-		}
-		time = timeArr.join(':');
-	}
-	// console.log('timeConversion -> time', time);
-	return time;
+  let meridiem = time.substr(8, 2);
+​
+  if (meridiem === "AM" && time.substr(0, 2) === "12") {
+    return `00${s.substr(2, 6)}`;
+  }
+​
+  if (meridiem === "AM") {
+    return s.substr(0, 8);
+  }
+​
+  if (meridiem === "PM" && time.substr(0, 2) === "12") {
+    return `${(Number(s.substr(0, 2)) % 12) + 12}${s.substr(2, 6)}`;
+  }
+​
+  if (meridiem === "PM") {
+    return `${Number(s.substr(0, 2)) + 12}${s.substr(2, 6)}`;
+  }
 }
+
 
 timeConversion('12:40:22PM');
