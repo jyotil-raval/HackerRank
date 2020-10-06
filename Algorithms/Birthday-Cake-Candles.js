@@ -6,18 +6,14 @@
  */
 
 function birthdayCakeCandles(candles) {
-	let count = 0;
-	let heights = 0;
-	candles.forEach((element) => {
-		if (element == heights) {
-			++count;
-		} else if (element > heights) {
-			heights = element;
-			count = 1;
+	const max = Math.max(...candles);
+	let frequency = 0;
+	for (let i = 0; i < candles.length; i++) {
+		if (ar[i] === max) {
+			frequency++;
 		}
-	});
-	// console.log('birthdayCakeCandles -> count', count);
-	return count;
+	}
+	return frequency;
 }
 
 birthdayCakeCandles([3, 2, 1, 3]);
