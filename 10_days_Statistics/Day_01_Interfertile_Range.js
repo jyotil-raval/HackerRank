@@ -11,7 +11,7 @@ const getMedian = (arr, start, end) => {
 	return median;
 };
 
-function processData(input) {
+const processData = (input) => {
 	const [N, x_str, f_str] = input.split('\n');
 	const F = f_str.split(' ').map((el) => parseInt(el));
 	const X = x_str.split(' ').map((el) => parseInt(el));
@@ -37,7 +37,7 @@ function processData(input) {
 	}
 
 	console.log((Q2 - Q1).toFixed(1));
-}
+};
 
 processData(`5
 10 40 30 50 20
