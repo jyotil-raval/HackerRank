@@ -1,4 +1,4 @@
-# [Item List Manager](https://www.hackerrank.com/challenges/item-list-manager/problem)
+# [Item List Manager](https://www.hackerrank.com/challenges/item-list-manager/problem){:target="\_blank" rel="noopener noreferrer"}
 
 ## Problem Overview
 
