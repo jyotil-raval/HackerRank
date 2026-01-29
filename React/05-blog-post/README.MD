@@ -25,15 +25,8 @@ Each blog post contains:
 1. Render a list of blog posts.
 2. For each blog post:
    - Always display the title.
-   - When collapsed:
-     - Display the short description.
-     - Display an **Expand** button.
-   - When expanded:
-     - Display the full content.
-     - Display a **Collapse** button.
-3. Clicking **Expand** should show the full content for that post.
-4. Clicking **Collapse** should hide the full content and return to the description.
-5. Each post should manage its expanded/collapsed state independently.
+   - Display the full content.
+3. Each post should manage its Create/Delete state independently.
 
 ---
 
